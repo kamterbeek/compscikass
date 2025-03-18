@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training Form</title>
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="trainingform">
     <a href="index.html">Home</a>
     <h2>Training Form</h2>
     <form id="trainingForm">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required> <!-- Fixed the attribute here -->
+      <br>
+        
       <label for="type">Type (Run/Hike):</label>
       <input type="text" id="type" name="type" required>
       <br>
