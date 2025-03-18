@@ -1,0 +1,55 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF7518;
+    color: #333;
+    text-align: center;
+    /* Center content horizontally */
+}
+
+.center-content {
+    display: inline-block;
+    /* Ensures the container doesn't take full width */
+    text-align: left;
+    /* Reset text-align for children */
+}
+
+h1 {
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.training-form {
+ background-color: green;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+}
+
+.training-form .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    width: 50%;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}p
