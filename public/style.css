@@ -1,4 +1,4 @@
-/* styles.css */
+/* style.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -26,7 +26,9 @@ p {
     line-height: 1.6;
 }
 
-.training-form {
+.trainingform {
+ font-family: Franklin Gothic Medium;
+  padding: 0;
  background-color: green;
  display: flex;
  justify-content: center;
@@ -35,13 +37,6 @@ p {
  margin: 0;
 }
 
-.training-form .container {
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: white;
-    width: 50%;
-}
 
 /* Responsive styles for small screens */
 @media (max-width: 600px) {
@@ -52,4 +47,4 @@ p {
     p {
         font-size: 14px;
     }
-}p
+}
