@@ -1,23 +1,30 @@
-document.getElementById("myForm").addEventListener("submit", async function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+const form = document.getElementByID('TrainingForm');
 
-    const formData = new FormData(this); // Capture form data
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {};
+
+    formData.forEach((value, key) => {[
+        data[key] = value;
+  });
 
     try {
-        const response = await fetch("/submit-form", {
-            method: "POST",
-            body: formData
+        const response = await fetch('http://localhost:3000/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON,stringify(data),
         });
 
-        if (response.ok) {
-            const result = await response.json();
-            alert("Form submitted successfully!");
-            console.log(result);
-        } else {
-            throw new Error("Failed to submit form.");
-        }
+        const result = await response.json();
+        console.log(result);
     } catch (error) {
-        console.error("Error:", error);
-        alert("Error submitting form.");
+        console.error('Error:', error);
     }
+
 });
+
+
