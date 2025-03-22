@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <title>Professional Blog</title>
-   <meta charset="UTF-8">
- </head>
-  <body>
-    <H1>Kassandra's Professional Blog</H1>
-    <p>
-      
-    </p>
-  </body>
+<head>
+    <title>Professional Blog</title>
+    <meta charset="UTF-8">
+    <style>
+        h2 {
+            transition: transform 0.5s ease; /* Smooth transition for scaling */
+        }
+
+        h2.grow {
+            transform: scale(1.5); /* Grow the h2 by 1.5 times */
+        }
+    </style>
+</head>
+<body>
+    <h1>Kassandra's Professional Blog</h1>
+    <h2 id="bubble-heading">Welcome to My Blog!</h2>
+    <p>Welcome to my professional blog where I share insights and experiences.</p>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="blog.js"></script>
+</body>
 </html>
