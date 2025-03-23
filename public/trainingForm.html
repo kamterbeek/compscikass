@@ -11,16 +11,17 @@
     <h1>Training Form</h1>
     <p>Thank you for submitting your training details. Please provide the necessary information.</p>
   </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="trainingForm.html">Running Data</a>
+    <a href="resume.html">Resume</a>
+    <a href="datavisuals.html">Graphs</a>
+    <a href="blog.html">Professional Blog</a>
+  </nav>
+
   <main>
     <form id="trainingForm" method="POST">
-       <nav>
-<a href="index.html">Home</a>
-<a href="trainingForm.html">Running Data</a>
-<a href="resume.html">Resume</a>
-<a href="datavisuals.html">Graphs</a>
-<a href="blog.html">Professional Blog</a>
-    </nav>
-
       <!-- Fieldset to group personal information -->
       <fieldset>
         <legend>Personal Information</legend>
@@ -32,7 +33,6 @@
         <label for="type">Type of Training:</label><br>
         <label for="run">Run</label>
         <input type="checkbox" id="run" name="type" value="run">
-        <br>
         <label for="hike">Hike</label>
         <input type="checkbox" id="hike" name="type" value="hike">
         <br>
@@ -48,7 +48,6 @@
         <label for="date">Date:</label>
         <input type="date" id="date" name="date" required>
         <br>
-
       </fieldset>
 
       <button type="submit">Submit</button>
@@ -56,4 +55,3 @@
   </main>
 </body>
 </html>
-
