@@ -7,18 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Training Form</h1>
     <p>Thank you for submitting your training details. Please provide the necessary information.</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trainingForm.html">Running Data</a>
+      <a href="resume.html">Resume</a>
+      <a href="datavisuals.html">Graphs</a>
+      <a href="blog.html">Professional Blog</a>
+      <a href="Gardening.html">Sustainability</a>
+    </nav>
   </header>
-  
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="trainingForm.html">Running Data</a>
-    <a href="resume.html">Resume</a>
-    <a href="datavisuals.html">Graphs</a>
-    <a href="blog.html">Professional Blog</a>
-  </nav>
 
   <main>
     <form id="trainingForm" method="POST">
@@ -28,30 +30,30 @@
 
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required placeholder="example@email.com">
-        <br>
+        
+        <label for="type">Type of Training:</label>
+        <div>
+          <input type="checkbox" id="run" name="type" value="run">
+          <label for="run">Run</label>
 
-        <label for="type">Type of Training:</label><br>
-        <label for="run">Run</label>
-        <input type="checkbox" id="run" name="type" value="run">
-        <label for="hike">Hike</label>
-        <input type="checkbox" id="hike" name="type" value="hike">
-        <br>
+          <input type="checkbox" id="hike" name="type" value="hike">
+          <label for="hike">Hike</label>
+        </div>
 
         <label for="distance">Distance (km):</label>
         <input type="number" id="distance" name="distance" required placeholder="Ex. 5">
-        <br>
-
+        
         <label for="duration">Time (min):</label>
         <input type="number" id="duration" name="duration" required placeholder="Ex. 30">
-        <br>
-
+        
         <label for="date">Date:</label>
         <input type="date" id="date" name="date" required>
-        <br>
       </fieldset>
 
       <button type="submit">Submit</button>
     </form>
   </main>
+
 </body>
 </html>
+
