@@ -3,7 +3,7 @@ const h2Element = document.getElementById('bubble-heading');
 
 // Add event listener to trigger the effect
 h2Element.addEventListener('mouseover', () => {
-    h2Element.classList.add('grow'); // Add 'grow' class on hover
+    h2Element.classList.add('grow');
 });
 
 // Remove the effect when mouse leaves
