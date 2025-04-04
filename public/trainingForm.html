@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Training Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <h1>Training Form</h1>
     <p>Thank you for submitting your training details. Please provide the necessary information.</p>
-
   </header>
 
   <main class="trainingForm">
-    <form id="trainingForm" class="trainingForm" method="POST">
-      <!-- Fieldset to group personal information -->
+    <form id="personalInformation" class="personalInformation" method="POST">
       <fieldset>
         <legend>Personal Information</legend>
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required placeholder="example@email.com">
+        <input type="email" id="email" name="email" required placeholder="example@email.com" />
         
         <label for="type">Type of Training:</label>
         <div>
-          <input type="checkbox" id="run" name="type" value="run">
+          <input type="checkbox" id="run" name="type" value="run" />
           <label for="run">Run</label>
 
-          <input type="checkbox" id="hike" name="type" value="hike">
+          <input type="checkbox" id="hike" name="type" value="hike" />
           <label for="hike">Hike</label>
         </div>
 
         <label for="distance">Distance (km):</label>
-        <input type="number" id="distance" name="distance" required placeholder="Ex. 5">
+        <input type="number" id="distance" name="distance" required placeholder="Ex. 5" />
         
         <label for="duration">Time (min):</label>
-        <input type="number" id="duration" name="duration" required placeholder="Ex. 30">
+        <input type="number" id="duration" name="duration" required placeholder="Ex. 30" />
         
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="date" name="date" required />
       </fieldset>
 
       <button type="submit">Submit</button>
@@ -47,7 +45,7 @@
   </main>
 
   <footer>
-        <nav>
+    <nav>
       <a href="index.html">Home</a>
       <a href="trainingForm.html">Running Data</a>
       <a href="resume.html">Resume</a>
@@ -59,8 +57,3 @@
 
 </body>
 </html>
-
-
-</body>
-</html>
-
