@@ -1,0 +1,18 @@
+/* Set the entire page's background and text alignment */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FF4F00; /* Dutch orange */
+    color: white;              /* Optional: white text for contrast */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Optional: center any block content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* full page height */
+}
