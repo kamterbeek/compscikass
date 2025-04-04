@@ -1,0 +1,19 @@
+/* Basic dark mode styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff;            /* White text */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Optional: center content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
