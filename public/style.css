@@ -1,50 +1,54 @@
-/* style.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FF7518;
-    color: #333;
-    text-align: center;
-    /* Center content horizontally */
+/* Form Layout */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
 
-.center-content {
-    display: inline-block;
-    /* Ensures the container doesn't take full width */
-    text-align: left;
-    /* Reset text-align for children */
+.form-group label {
+    font-weight: bold;
 }
 
-h1 {
-    color: #007bff;
+.form-group input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.trainingForm {
- font-family: Franklin Gothic Medium;
-  padding: 0;
- background-color: #35b552;
- display: flex;
- justify-content: center;
- align-items: center;
- height: 100vh;
- margin: 0;
+/* Center form */
+.personalInformation {
+    font-family: "Franklin Gothic Medium", sans-serif;
+    background-color: #0021f3;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
 }
 
+/* Button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-/* Responsive styles for small screens */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 14px;
-    }
+button:hover {
+    background-color: #0056b3;
 }
