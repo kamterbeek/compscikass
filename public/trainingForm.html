@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Training Form</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,29 +18,42 @@
       <fieldset>
         <legend>Personal Information</legend>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required placeholder="example@email.com" />
-        
-        <label for="type">Type of Training:</label>
-        <div>
-          <input type="checkbox" id="run" name="type" value="run" />
-          <label for="run">Run</label>
-
-          <input type="checkbox" id="hike" name="type" value="hike" />
-          <label for="hike">Hike</label>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" />
         </div>
 
-        <label for="distance">Distance (km):</label>
-        <input type="number" id="distance" name="distance" required placeholder="Ex. 5" />
-        
-        <label for="duration">Time (min):</label>
-        <input type="number" id="duration" name="duration" required placeholder="Ex. 30" />
-        
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required />
-      </fieldset>
+        <div class="form-group">
+          <label>Type of Training:</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="run" name="type" value="run" />
+            <label for="run">Run</label>
 
-      <button type="submit">Submit</button>
+            <input type="checkbox" id="hike" name="type" value="hike" />
+            <label for="hike">Hike</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="distance">Distance (km):</label>
+          <input type="number" id="distance" name="distance" required placeholder="Ex. 5" />
+        </div>
+
+        <div class="form-group">
+          <label for="duration">Time (min):</label>
+          <input type="number" id="duration" name="duration" required placeholder="Ex. 30" />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+
+      </fieldset>
     </form>
   </main>
 
