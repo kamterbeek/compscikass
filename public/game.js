@@ -36,11 +36,11 @@ function startGame() {
     { x: width / 3 + 800, width: 80 }
   ];
 
-  collectables = [
-    { x: width / 4, y: floorPos_y - 100, size: 30, isFound: false },
-    { x: width / 1.5, y: floorPos_y - 100, size: 30, isFound: false },
-    { x: width / 1.2, y: floorPos_y - 100, size: 30, isFound: false }
-  ];
+ collectables = [
+        { x_pos: 400, y_pos: floorPos_y - 50, size: 50, isFound: false },
+        { x_pos: 800, y_pos: floorPos_y - 50, size: 50, isFound: false }
+    ];
+ 
 
   isLeft = false;
   isRight = false;
@@ -114,11 +114,13 @@ function draw() {
     rect(canyons[i].x, floorPos_y, canyons[i].width, height - floorPos_y);
   }
 
-  // draw the collectables
-  for (var i = 0; i < collectables.length; i++) {
-    drawCollectable(collectables[i]);
-  }
-
+ // Draw collectables if not found
+    for (let i = 0; i < collectables.length; i++) {
+        let collectable = collectables[i];
+        if (!collectable.isFound) {
+            drawCollectable(collectable.x_pos, collectable.y_pos, collectable.size);
+        }
+    }
   // draw the game character
   fill(152, 192, 205);
   rect(gameChar_x - 16, gameChar_y - 38, 23, 30);
@@ -234,22 +236,26 @@ function drawClouds() {
   }
 }
 
-function drawCollectable(collectable) {
-  if (!collectable.isFound) {
-    fill(252, 241, 14);
-    beginShape();
-    vertex(collectable.x, collectable.y);
-    vertex(collectable.x + 4, collectable.y - 15);
-    vertex(collectable.x + 21, collectable.y - 15);
-    vertex(collectable.x + 7, collectable.y - 25);
-    vertex(collectable.x + 14, collectable.y - 40);
-    vertex(collectable.x, collectable.y - 30);
-    vertex(collectable.x - 16, collectable.y - 40);
-    vertex(collectable.x - 9, collectable.y - 25);
-    vertex(collectable.x - 23, collectable.y - 15);
-    vertex(collectable.x - 6, collectable.y - 15);
-    endShape(CLOSE);
-  }
+function drawCollectable(x, y, diameter) {
+    let baseColor = color(255, 255, 0);
+
+    // Draw the base circle
+    fill(baseColor);
+    noStroke();
+    ellipse(x, y, diameter / 5);
+
+    for (let i = 0; i < 50; i++) {
+        let sparkleColor = color(
+            random(200, 255), 
+            random(200, 255), 
+            0                
+        );
+
+        fill(sparkleColor);
+        let offsetX = random(-10, 5); 
+        let offsetY = random(-10, 5); 
+        ellipse(x + offsetX, y + offsetY, diameter * 0.1); // Adjust size of sparkles
+    }
 }
 
 function renderFlagpole()
