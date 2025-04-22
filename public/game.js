@@ -1,3 +1,4 @@
+//create variables
 var gameChar_x;
 var gameChar_y;
 var floorPos_y;
