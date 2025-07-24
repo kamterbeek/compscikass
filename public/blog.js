@@ -8,5 +8,5 @@ h2Element.addEventListener('mouseover', () => {
 
 // Remove the effect when mouse leaves
 h2Element.addEventListener('mouseout', () => {
-    h2Element.classList.remove('grow'); // Remove 'grow' class 
+    h2Element.classList.remove('grow'); // Remove 'grow' class
 });
