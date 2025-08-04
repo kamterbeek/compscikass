@@ -1,7 +1,6 @@
 // Get the h2 element
 const h2Element = document.getElementById('bubble-heading');
 
-
 h2Element.addEventListener('mouseover', () => {
     h2Element.classList.add('grow');
 });
