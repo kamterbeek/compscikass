@@ -7,7 +7,7 @@ This project is to build my comp sci website.
 
 1. Clone the repository.
 2. Install dependencies with `npm install`.
-3. Configure the settings in `config.js`.
+3. Configure the settings in `config.js`
 4. Run the application with `npm start`
 
 ## Usage
