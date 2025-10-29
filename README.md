@@ -12,7 +12,7 @@ This project is to build my comp sci website.
 
 ## Usage
 
-Describe how to use your project and provide examples.
+This project is for my website
 
 ## Documentation
 
