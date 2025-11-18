@@ -13,6 +13,7 @@ const pool = new Pool({
 });
 
 // Initialize Express app (Fix: 'application' should be 'app')
+
 const app = express();
 
 // Middleware for JSON parsing
