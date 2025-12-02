@@ -9,5 +9,3 @@ h2Element.addEventListener('mouseover', () => {
 h2Element.addEventListener('mouseout', () => {
     h2Element.classList.remove('grow'); // Remove 'grow' class
 });
-
-
