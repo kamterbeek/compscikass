@@ -21,7 +21,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Authors
 
-- [Author Name](link-to-author-profile)
+- Kassandra ter Beek
 - [Maintainer Name](link-to-maintainer-profile)
 
 [![Build Status](badge-url)](link-to-build-status)
