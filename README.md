@@ -3,7 +3,6 @@
 This project is to build my comp sci website. 
 
 
-
 ## Usage
 
 This project is for my website
