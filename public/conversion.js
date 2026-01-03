@@ -1,1 +1,2 @@
-// import in command line npm install convert-units;
+/* import in command line: 
+npm install convert-units;
