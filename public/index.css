@@ -16,3 +16,13 @@ body {
     align-items: center;
     min-height: 100vh; /* full page height */
 }
+
+/*button */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
