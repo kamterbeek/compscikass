@@ -1,6 +1,7 @@
 {
   "projects": {
-    "prod": "compscikass"
+    "prod": "compscikass",
+    "deployment": "compscikass"
   },
   "targets": {},
   "etags": {}

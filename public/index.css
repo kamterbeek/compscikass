@@ -21,8 +21,8 @@ body {
 .button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #0077ff;
-    color: white;
+    background-color: white;
+    color: black;
     text-decoration: none;
     border-radius: 6px;
   }
