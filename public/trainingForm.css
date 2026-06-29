@@ -19,6 +19,8 @@ main.trainingForm {
     width: 100%;
 }
 
+
+
 /* Form Layout */
 .form-group {
     margin-bottom: 15px;
@@ -71,6 +73,16 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+    /*button */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
 
 button:hover {
     background-color: #0056b3;
