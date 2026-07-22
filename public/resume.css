@@ -1,29 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Black background */
-    color: #ffffff;            /* White text */
-    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
-/* Optional: center content */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+.resume-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
 }
 
+h1 {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff;
+}
+
+h3,
+h4,
+h5 {
+    margin-bottom: 10px;
+}
+
+.resume-contact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
 .work {
-align-items: right;
-font-size: 18pt;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 .roles {
-    align-items: center;
-    font-size: 14pt;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
 }
-    
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+
+    .resume-container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
