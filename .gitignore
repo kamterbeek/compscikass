@@ -1,3 +1,6 @@
 .DS_Store
 .firebase/
 .firebase/
+.env
+server/.env
+node_modules/
